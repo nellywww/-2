@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать цветы</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-seedling"></i> Букет
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="forma.html" class="active">Заказать</a></li>
+            </ul>
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Форма заказа букета</h1>
+        <p>Заполните форму, и мы свяжемся с вами для уточнения деталей.</p>
+
+        <form action = "https://ya.ru/" id="UzerEnter" target="_blank">
+            <div class="form-group">
+                <label for="customer_name">Ваше имя:</label>
+                <input type="text" id="customer_name" name="customer_name" required value="Иван Иванов">
+            </div>
+
+            <div class="form-group">
+                <label for="customer_phone">Телефон:</label>
+                <input type="text" id="customer_phone" name="customer_phone" required value="+7 900 123-45-67">
+            </div>
+
+            <div class="form-group">
+                <label for="delivery_address">Адрес доставки:</label>
+                <input type="text" id="delivery_address" name="delivery_address" required value="ул. Цветочная, д. 5">
+            </div>
+
+            <div class="form-group">
+                <label for="flower_count">Количество цветов в букете:</label>
+                <input type="number" id="flower_count" name="flower_count" min="1" max="100" required value="15">
+            </div>
+
+            <div class="form-group">
+                <p>Тип букета:</p>
+                <label>
+                    <input type="radio" name="bouquet_type" value="classic" checked>
+                    Классический
+                </label>
+                <label>
+                    <input type="radio" name="bouquet_type" value="modern">
+                    Современный
+                </label>
+                <label>
+                    <input type="radio" name="bouquet_type" value="seasonal">
+                    Сезонный
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="wishes">Ваши пожелания:</label>
+                <textarea id="wishes" name="wishes" rows="4">Хотелось бы добавить зелени</textarea>
+            </div>
+
+            <button type="submit" class="btn">Отправить заказ</button>
+        </form>
+        <div id="message" class="message">
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

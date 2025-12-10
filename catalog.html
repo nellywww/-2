@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров - Букет</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-seedling"></i> Букет
+            </a>
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html" class="active">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="forma.html">Заказать</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <h1 class="text-center mt-4">Каталог товаров</h1>
+        <p class="text-center">Выберите цветы и оформите заказ</p>
+        <ul id="catalog-container" class="d-flex flex-wrap justify-content-around mt-4">
+            <!-- JS вставляет карточки  -->
+        </ul>
+    </main>
+     <hr class="mt-5">
+     <h2 class="text-center mt-4">Корзина</h2>
+     
+      <div id="cart-box" class="container mt-3">
+       <ul id="cart-list" class="list-group"></ul>
+       <p id="total-sum" class="fw-bold mt-3 text-center"></p>
+
+         <form action="https://www.google.com/search" method="get" target="_blank" id="order-form">
+         <button type="submit" class="btn btn-success w-100 mt-3">Отправить заказ</button>
+        </form>
+      </div>
+
+
+    <script src="nav.js"></script>
+    <script src="catalog.js"></script>
+</body>
+</html>

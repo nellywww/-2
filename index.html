@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный магазин "Букет"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <i class="fas fa-seedling"></i> Букет
+        </a>
+        <button class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="forma.html">Заказать</a></li>
+        </ul>
+    </div>
+    </nav>
+
+
+    <main class="container">
+        <h1>Добро пожаловать в цветочный магазин "Букет"!</h1>
+        <p>Создаем красивые букеты для любых событий.</p>
+        <p>Доставка по всему городу</p>
+        
+        <div class="page-nav">
+            <a href="#section1">Наши преимущества</a>
+            <a href="#section2">Популярные цветы</a>
+            <a href="#services">Услуги</a>
+            <a href="#top">К началу</a>
+        </div>
+
+        <section id="section1">
+            <h2><i class="fas fa-star"></i> Почему выбирают именно нас?</h2>
+            <p>В мире цветочного бизнеса мы выделяемся не только качеством продукции, но и подходом к каждому клиенту. Вот ключевые причины, почему покупатели возвращаются к нам снова и снова:</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставим за 2 часа по городу. Служба доставки работает 24/7</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>Свежие цветы</h3>
+                    <p>Только свежие цветы от проверенных поставщиков. Гарантируем, что ваш букет простоит не менее 7 дней</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h3>С любовью</h3>
+                    <p>Каждый букет собирается с заботой. Наши флористы, как настоящие художники, не просто составляют букеты, а создают эмоции</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <h2>Популярные цветы</h2>
+            <div class="image-gallery">
+                <figure>
+                    <img src="https://i.pinimg.com/736x/52/2d/8d/522d8dd32eb479bc2fc865345320911e.jpg" alt="Розы">
+                    <figcaption>Красные розы - символ любви</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.pinimg.com/736x/c2/18/35/c21835a8ceec813fd7a667493040dd6c.jpg" alt="Тюльпаны">
+                    <figcaption>Тюльпаны - весеннее настроение</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.pinimg.com/736x/6b/07/ac/6b07ac8dfa1476f9da438b1fe20b7a5a.jpg" alt="Лилии">
+                    <figcaption>Лилии - изящество и красота</figcaption>
+                </figure>
+            </div>
+        </section>
+
+         <section id="services" class="content-section">
+            <h2><i class="fas fa-concierge-bell"></i> Наши услуги</h2>
+            <p>Мы предлагаем полный спектр флористических услуг - от создания небольшого букета до оформления масштабных мероприятий.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Свадебная флористика</h3>
+                    <ul>
+                        <li>Букет невесты (от 50 вариантов)</li>
+                        <li>Бутоньерки для жениха и свидетелей</li>
+                        <li>Оформление арки, президиума</li>
+                        <li>Цветочные инсталляции для фотосессии</li>
+                        <li>Оформление автомобиля</li>
+                        <li>Центральные композиции для столов</li>
+                    </ul>
+                    <p class="service-note">Разрабатываем индивидуальный проект под бюджет и стиль свадьбы.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Корпоративная флористика</h3>
+                    <ul>
+                        <li>Еженедельное оформление офисов</li>
+                        <li>Цветы для переговорных комнат</li>
+                        <li>Оформление мероприятий и конференций</li>
+                        <li>Подарки партнерам и клиентам</li>
+                        <li>Новогоднее оформление</li>
+                        <li>Растения для ресепшн</li>
+                    </ul>
+                    <p class="service-note">Заключаем долгосрочные договоры со скидкой до 30%.</p>
+                </div>
+            </div>
+                
+                <div class="service-card">
+                    <h3>Интерьерная флористика</h3>
+                    <ul>
+                        <li>Подбор растений для дома</li>
+                        <li>Создание фитостен и вертикальных садов</li>
+                        <li>Композиции для каминов и полок</li>
+                        <li>Сезонное обновление интерьера</li>
+                        <li>Флорариумы и суккуленты</li>
+                        <li>Уход за растениями (абонемент)</li>
+                    </ul>
+                    <p class="service-note">Приезжаем на замер, учитываем освещение, стиль и цветовую гамму.</p>
+                </div>
+        </section>        
+    </main>
+    <div>
+        <a href="#top" class="scroll-top">Наверх</a>
+    </div>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
